@@ -1,0 +1,46 @@
+.tituloprincipal
+{
+    padding-left: 20px
+     ;
+}
+
+#Foto
+{
+    width: 100%;
+}
+.principal
+{
+    background-color: rgb(204, 195, 195);
+    padding: 30px;
+}
+.titulocentralizado
+{
+    text-align: center;
+}
+p
+{
+     text-align: center;
+}
+#missao
+{
+    font-size: 20px;
+}
+em b
+{
+    color: red;
+}
+ul
+{
+    display: inline-block;
+    width: 20%;
+    margin-right: 15%;
+    vertical-align: top;
+}
+.itens
+{
+    font-style: italic;
+}
+.imagembeneficios
+{
+    width: 50%;
+}

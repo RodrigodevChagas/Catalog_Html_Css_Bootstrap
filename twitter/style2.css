@@ -1,0 +1,27 @@
+.principal
+{
+    width: 940px;
+    margin: 0 auto;
+}
+.imagem
+{
+    width: 5%;
+}
+.Imagemdiv
+{
+    text-align: center;
+}
+.Entrada
+{
+    text-align: center;
+}
+.Botao
+{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+.frase
+{
+    margin: 5px;
+}

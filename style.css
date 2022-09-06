@@ -1,0 +1,334 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caixa
+{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+.navegacao
+{
+    position: fixed;
+    right: 0px;
+    top: -300px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: top 1s;
+    height: 60px;
+    padding: 5px;
+    box-shadow: 5px 10px 50px #000000;
+}
+
+.logo_navbar{
+    margin-left: 20px;
+    height: 100%;
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+.navegacao ul li a{
+    color: white;
+}
+.menuBtn{
+    padding: 25px; 
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
+
+.menuBtn:hover ~.navegacao
+{
+    top: 0px !important;
+}
+
+.navegacao:hover
+{
+    top: 0px !important;
+}
+
+.navegacao li
+{
+    display: inline;
+    margin: 5px 10px 0 0;
+}
+.navegacao a
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navegacao a:hover
+{
+    color: rgb(151, 151, 136);
+}
+.navegacao a:active
+{
+    color: green;
+}
+
+.produtos
+{
+    width: 940px;
+    margin: 10px auto;
+    padding: 50px 0;
+}
+.produtos li
+{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*Borda declarada com cor, tamanho e estilo*/
+    border: black 2px solid;
+    border-radius: 10px;
+}
+.produtos li:hover
+{
+    border-color: rgb(177, 177, 0);
+}
+.produtos li:active
+{
+    border-color: green;
+}
+.produtos h5
+{
+    font-weight: bold;
+}
+.produtos li:hover h5
+{
+    font-size: 22px;
+}
+.produtos li img{
+
+    margin: 20px 0;
+}
+.produtos-descricao
+{
+    font-size: 18px;
+}
+.produtos-preco
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+@media screen and (max-width:900px){
+    .produtos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+}
+
+.rodape
+{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 0% 0 5%;
+}
+.copyright
+{
+    color: white;
+    margin-top: 20px;
+}
+.logo_copyright{
+
+    width: 5%;
+    margin-top: 5%;
+}
+
+/* CSS da pagina de contato */
+.sobre-conteudo
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.formulario
+{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Rotulo
+{
+    margin: 4px 0;
+    display: block;
+    font-size: 18px;
+}
+.Entrada
+{
+    padding: 10px 0 10px 10px;
+    width: 50%;
+}
+.radio
+{
+    margin: 4px 0;
+    font-size: 18px;
+    display: flex;
+    margin: 2px 5px 5px 0px;
+}
+.checkbox
+{
+
+    font-size: 18px;
+    display: flex;
+    margin: 10px 0px 20px -3px;
+}
+.turno
+{
+    width: 100%;
+    text-align: center;
+}
+.Botao{
+    margin-top: 15px;
+    display: block;
+    width: 40%;
+    padding: 12px 12px 20px 0;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+.Botao:hover
+{
+    background-color: green;
+    transform: scale(1.1);    
+}
+.tabela
+{
+    margin: 20px 0 40px;
+}
+.TH
+{
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+.itemTH, .itemTB
+{
+    border: 2px solid black;
+    padding: 8px 15px;
+}
+
+/* CSS da home */
+.imagem_carrossel{
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+.imagem_carrossel_dois{
+    object-fit: cover;
+    height: 50vh;
+}
+.banner
+{
+    width: 100%;
+}
+.titulo-principal
+{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    clear: left;
+}
+.principal{
+    background: whitesmoke;
+}
+.principal p
+{
+    margin: 0 0 1em;
+}
+.principal b{
+
+    font-weight: bold;
+}
+.principal em{
+
+    font-style: italic;
+}
+
+.resposta_historica{
+
+    width: 120px;
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.imagem-variedades{
+
+    width: 60%;
+    margin: 0 0 2em 2em;
+}
+.camisa{
+
+    width: 106%;
+}
+.bandeira, .pingente_vasco{
+
+    width: 78%;
+}
+.socio{
+    width:74%;
+}
+.externos{
+    padding: 3em 0;
+    background: linear-gradient(whitesmoke 50%, gray);
+}
+.externos p
+{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+.itens{
+
+    margin: 0 0 1em 0.5e;
+    font-weight: bold;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+.conteudo-variedades{
+    width: 940px;
+    margin: 0 auto;
+}
+.lista-variedades{
+    display: inline-block;
+    vertical-align: top;
+}
+.variedades{
+    background: gray;
+    padding: 3em 0;
+}

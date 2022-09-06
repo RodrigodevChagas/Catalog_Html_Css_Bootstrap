@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Lek's Barber</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class = "cabecalho">
+            <div class="caixa">
+                <div class="menuBtn">MENU</div>
+                <nav class = "navegacao">
+                    <img class="logo_navbar" src="cruz_de_malta.png" alt="Logo da Lek's Barbar">
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href= "produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <main class="principal">
+        <form class="formulario">
+            <label class = "Rotulo" for="nomeEsobrenome">Nome e Sobrenome</label>
+            <input class = "Entrada" type= "text" id="nomeEsobrenome" required> 
+            <label class = "Rotulo" for="endereco">Endereco</label>
+            <input class = "Entrada" type= "text" id="endereco"> 
+            <label class = "Rotulo" for="email">Email</label>
+            <input class = "Entrada" type= "email" id="email" placeholder="seuemail@dominio.com"> 
+            <label class = "Rotulo" for="Telefone">Telefone</label>
+            <input class = "Entrada" type= "tel" id="Telefone" placeholder="(XX)XXXXX-XXXX"> 
+            <label class = "Rotulo" for="Mensagem">Mensagem</label>
+            <textarea class = "Entrada"cols="90" rows="10" id="Mensagem"></textarea>  
+            <fieldset>
+                <legend class="radio">Como prefere o nosso contato?</legend>
+                <label class = "radio" for="radio-email"> <input class = "radio" type= "radio" name ="contato" value="Email" id="radio-email">Email</label>
+                <label class = "radio" for="radio-telefone"><input class = "radio" type= "radio" name ="contato" value="Telefone" id="radio-telefone">Telefone</label>
+                <label class = "radio" for="radio-whatsapp"><input class = "radio" type= "radio" name ="contato" value="Whats-app" id="radio-whatsapp" checked>Whatsapp</label>
+                
+                <legend class="radio">Qual horário prefere ser atendido?</legend>
+                <select class="turno">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades por Email?</label>
+            <input class = "Botao" type="submit" value="Enviar">
+        </form>
+        <table class="tabela">
+            <thead class="TH">
+                <tr>
+                    <th class="itemTH">Dia</th>
+                    <th class="itemTH">Horário</th>
+                </tr>
+            </thead>
+            <tbody class="TB">
+                <tr>
+                    <td class="itemTB">Segunda</td>
+                    <td class="itemTB">Das 8H às 20H</td>
+                </tr>
+                <tr>
+                    <td class="itemTB">Quarta</td>
+                    <td class="itemTB">Das 8H às 20H</td>
+                </tr>
+                <tr>
+                    <td class="itemTB">Sexta</td>
+                    <td class="itemTB">Das 8H às 20H</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+    </body>
+    <footer class = "rodape">
+        <div>                
+            <img class="logo_copyright" src="cruz_de_malta.png" alt="Cruz de Malta">
+            <p class = "copyright">&copy; Copyright Vasco da Grana</p>
+        </div>
+    </footer>
+</html>
